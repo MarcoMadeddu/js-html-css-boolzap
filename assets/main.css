@@ -213,12 +213,65 @@ body{
 }
 
 .main-right{
-  width: 100%;
+  display: flex;
+  justify-content: center;
   flex-grow: 1;
+  width: 100%;
   background-image: url("../img/mine.jpg");
-
+  overflow-y: scroll;
 }
 
+.main-chat{
+  width: 80%;
+  height: 100%;
+  margin-top: 40px;
+}
+
+.list-chat{
+  display: flex;
+  flex-direction: column;
+}
+
+.list-chat li{
+    margin: 5px 0;
+}
+
+.rec{
+  display: flex;
+  width: 100%;
+  justify-content: flex-start;
+}
+
+.mex-text{
+  display: flex;
+  width: auto;
+  max-width: 200px;
+  padding: 3px 10px;
+  border-radius: 5px;
+}
+.bg-white{
+  background: white;
+}
+
+.bg-green{
+  background-color: #d5faba;
+}
+
+.mex-text>span{
+  display: flex;
+  align-items: flex-end;
+  margin-top: 20px;
+  font-size: 8px;
+}
+
+.send{
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+}
+
+
+/* S E N D  S E C T I O N */
 .footer-right{
   display: flex;
   width: 100%;
@@ -235,7 +288,9 @@ body{
 
 .send-section input{
   flex-basis: 80%;
-  padding: 5px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px
 }
 
 .emoji,

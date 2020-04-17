@@ -1,0 +1,39 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  height: 100vh;
+  background-image: linear-gradient(
+    to bottom,
+      #009688 0px,
+      #009688 15vh,
+      #d2dbdc 15vh,
+      #d2dbdc 100%
+    );
+  display: flex;
+  align-items: center;
+  justify-content: center
+}
+
+.app{
+  height: 80vh;
+  width: 80%;
+  display: flex;
+}
+
+.left-chat{
+  height: 80vh;
+  display: flex;
+  flex-basis: 30%;
+  border: 1px solid red;
+}
+
+.right-chat{
+  height: 80vh;
+  display: flex;
+  flex-basis: 70%;
+  border: 1px solid blue;
+}

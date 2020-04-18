@@ -4,16 +4,27 @@ $(document).ready(function () {
 var list = $(".list-chat");
 var newMessage = $(".new-message");
 var chatContainer = $(".main-right");
-var sendButton =$("")
+var sendButton =$(".send-section .mic");
 
 
-//aggiunta nuovo list items
+//Aggiunta messaggio con invio da tastiera
 newMessage.keyup(function(e){
 
   if(e.which == 13){
     var text = newMessage.val().trim();
     addMessage();
 };
+
+//Aggiunta messaggio con click su bottone
+
+// $("body").on("click" , ".send-section .mic" , function(){
+//    console.log("click");
+// });
+
+sendButton.click(function(){
+  alert("dioporco");
+});
+
 
 
 function addMessage(){

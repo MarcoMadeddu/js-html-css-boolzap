@@ -7,13 +7,15 @@ $(document).ready(function (){
 
   // S E N D  B Y  B U T T O N //
   sendButton.click(function(){
+    var text = newMessage.val().trim();
     addMessage();
   })
 
   // S E N D  B Y  K E Y  F U N C T I O N //
 
-  newMessage.keyup(function(e){
+  newMessage().keyup(function(e){
     if(e.which==13){
+      var text = newMessage.val().trim();
       addMessage();
     }
   })
@@ -22,7 +24,7 @@ $(document).ready(function (){
   // F U N C T I O N S //
 
   function addMessage(){
-      var text = newMessage.val().trim();
+
     if(text!== ""){
       var elementNew = $(".template .send ").clone();
       elementNew.children(".mex-text.bg-green").prepend(text);
@@ -31,5 +33,15 @@ $(document).ready(function (){
     }
     newMessage.val("");
   }
+
+
+
+
+
+
+
+
+
+
 
 })

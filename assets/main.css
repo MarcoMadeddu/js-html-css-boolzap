@@ -24,6 +24,10 @@ body{
   color: #7f7f7f;
 }
 
+.active{
+  background-color: #eaebeb;
+}
+
 .app{
   height: 90vh;
   width: 80%;
@@ -36,7 +40,6 @@ body{
 .left-chat{
   height: 90vh;
   flex-basis: 35%;
-  overflow-y: scroll;
 }
 
 
@@ -133,6 +136,11 @@ body{
 
 /* C H A T S  S E C T I O N */
 
+.chat-container{
+  height: 510px;
+  overflow-y: scroll;
+}
+
 .chats{
   display: flex;
   align-items: center;
@@ -144,7 +152,6 @@ body{
 
 .chats:hover{
   background-color: #eaebeb;
-
 }
 
 .box-chat{

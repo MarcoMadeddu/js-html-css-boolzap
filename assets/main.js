@@ -9,20 +9,21 @@ $(document).ready(function (){
 
   // S E A R C H //
   var searchIn = $(".contact-search");
-  var findChat = $(".chats-text span:first-child").text();
   var chatContainer=$(".chats");
 
-  console.log(chatContainer);
 
+// S E A R CH  B Y  I N P U T//
   searchIn.keyup(function(a){
 
     chatContainer.hide();
-    var keySearch= searchIn.val().trim();
 
-    if(findChat.includes(keySearch)){
-      chatContainer.show();
-      //qua vorrei mettere in show la chat che ha quel nome all'interno ma non capisco come :D :D :D
-    }
+    var keySearch= $(this).val().toLowerCase();
+    $(".chats-text span:first-child").each(function(){
+      if($(this ,".chats-text span:first-child").text().toLowerCase().includes(keySearch)){
+        $(this).parents().show();
+      }
+    })
+
   });
 
   // S E N D  B Y  B U T T O N //

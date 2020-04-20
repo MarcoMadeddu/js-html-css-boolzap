@@ -44,12 +44,13 @@
           <!--**  S E A R C H  S E C T I O N **-->
           <div class="search">
             <i class="fas fa-search"></i>
-            <input type="text" placeholder= "Cerca o inizia una nuova chat">
+            <input class="contact-search"type="text" placeholder= "Cerca o inizia una nuova chat">
           </div>
 
           <!--**  C H A T  S E C T I O N **-->
           <div class="chat-container">
-            <div class="chats active">
+
+            <div class="chats active" data-conversazione="0">
               <div class="box-chat">
                 <img src="img/avatar_2.jpg" alt="">
                 <div class="chats-text">
@@ -62,11 +63,11 @@
                 </div>
             </div>
 
-            <div class="chats">
+            <div class="chats" data-conversazione="1">
               <div class="box-chat">
                 <img src="img/avatar_3.jpg" alt="">
                 <div class="chats-text">
-                  <span>Michele</span>
+                  <span>Andrea</span>
                   <span>Caffè stasera?</span>
                 </div>
               </div>
@@ -75,11 +76,11 @@
                 </div>
             </div>
 
-            <div class="chats">
+            <div class="chats" data-conversazione="2">
               <div class="box-chat">
                 <img src="img/avatar_4.jpg" alt="">
                 <div class="chats-text">
-                  <span>Michele</span>
+                  <span>Fabio</span>
                   <span>Caffè stasera?</span>
                 </div>
               </div>
@@ -88,11 +89,11 @@
                 </div>
             </div>
 
-            <div class="chats">
+            <div class="chats" data-conversazione="3">
               <div class="box-chat">
                 <img src="img/avatar_5.jpg" alt="">
                 <div class="chats-text">
-                  <span>Michele</span>
+                  <span>Simona</span>
                   <span>Caffè stasera?</span>
                 </div>
               </div>
@@ -101,11 +102,11 @@
                 </div>
             </div>
 
-            <div class="chats">
+            <div class="chats" data-conversazione="4">
               <div class="box-chat">
                 <img src="img/avatar_6.jpg" alt="">
                 <div class="chats-text">
-                  <span>Michele</span>
+                  <span>Alessia</span>
                   <span>Caffè stasera?</span>
                 </div>
               </div>
@@ -114,11 +115,11 @@
                 </div>
             </div>
 
-            <div class="chats">
+            <div class="chats" data-conversazione="5">
               <div class="box-chat">
                 <img src="img/avatar_7.jpg" alt="">
                 <div class="chats-text">
-                  <span>Michele</span>
+                  <span>Luca</span>
                   <span>Caffè stasera?</span>
                 </div>
               </div>
@@ -127,76 +128,11 @@
                 </div>
             </div>
 
-            <div class="chats">
+            <div class="chats" data-conversazione="6">
               <div class="box-chat">
                 <img src="img/avatar_8.jpg" alt="">
                 <div class="chats-text">
-                  <span>Michele</span>
-                  <span>Caffè stasera?</span>
-                </div>
-              </div>
-                <div class="chats-time">
-                  <span>17:53</span>
-                </div>
-            </div>
-
-            <div class="chats">
-              <div class="box-chat">
-                <img src="img/avatar_2.jpg" alt="">
-                <div class="chats-text">
-                  <span>Michele</span>
-                  <span>Caffè stasera?</span>
-                </div>
-              </div>
-                <div class="chats-time">
-                  <span>17:53</span>
-                </div>
-            </div>
-
-            <div class="chats">
-              <div class="box-chat">
-                <img src="img/avatar_2.jpg" alt="">
-                <div class="chats-text">
-                  <span>Michele</span>
-                  <span>Caffè stasera?</span>
-                </div>
-              </div>
-                <div class="chats-time">
-                  <span>17:53</span>
-                </div>
-            </div>
-
-            <div class="chats">
-              <div class="box-chat">
-                <img src="img/avatar_2.jpg" alt="">
-                <div class="chats-text">
-                  <span>Michele</span>
-                  <span>Caffè stasera?</span>
-                </div>
-              </div>
-                <div class="chats-time">
-                  <span>17:53</span>
-                </div>
-            </div>
-
-            <div class="chats">
-              <div class="box-chat">
-                <img src="img/avatar_2.jpg" alt="">
-                <div class="chats-text">
-                  <span>Michele</span>
-                  <span>Caffè stasera?</span>
-                </div>
-              </div>
-                <div class="chats-time">
-                  <span>17:53</span>
-                </div>
-            </div>
-
-            <div class="chats">
-              <div class="box-chat">
-                <img src="img/avatar_2.jpg" alt="">
-                <div class="chats-text">
-                  <span>Michele</span>
+                  <span>Franco</span>
                   <span>Caffè stasera?</span>
                 </div>
               </div>
@@ -205,8 +141,6 @@
                 </div>
             </div>
           </div>
-
-
         </main>
 
       </div>
@@ -220,7 +154,7 @@
           <!-- **  C O N T A C T  S E C T I O N **  -->
           <div class="contact">
             <div class="box-chat">
-              <img src="img/avatar_1.jpg" alt="">
+              <img src="img/avatar_2.jpg" alt="">
               <div class="chats-text">
                 <span>Michele</span>
                 <span>Ultimo accesso oggi alle 17:53</span>
@@ -237,7 +171,7 @@
         <!-- ** M A I N  R I G H T **  -->
         <main class="main-right">
           <div class="main-chat">
-            <ul class="list-chat">
+            <ul class="list-chat on">
               <li class="rec"> <span class="mex-text bg-white">Ei <span>18:53</span></span> </li>
               <li class="send"><span class="mex-text bg-green">Ciao <span>18:53</span></span> </li>
               <li class="rec"> <span class="mex-text bg-white">Come stai? <span>18:53</span></span> </li>
@@ -269,8 +203,15 @@
 
 
     <!-- ** T E M P L A T E ** -->
+
+    <!-- ** S E N T ** -->
     <div class="template">
       <li class="send"><span class="mex-text bg-green"><span>18:53</span></span> </li>
+    </div>
+
+    <!-- ** R E C E V E I D ** -->
+    <div class="template">
+      <li class="rec"><span class="mex-text bg-white"><span>18:53</span></span> </li>
     </div>
 
 

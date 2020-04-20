@@ -256,6 +256,7 @@ body{
   max-width: 250px;
   padding: 3px 10px;
   border-radius: 5px;
+  word-break: break-word;
 }
 .bg-white{
   background: white;
@@ -270,6 +271,7 @@ body{
   align-items: flex-end;
   margin-top: 20px;
   font-size: 8px;
+  word-break: normal;
 }
 
 .send{

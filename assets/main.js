@@ -14,10 +14,18 @@ $(document).ready(function (){
   // C H A N G E  C H A T //
   $(".chats").click(function(){
     var chat = $(this).attr("data-conversazione");
+    $(".chats").removeClass("active");
+    $(this).addClass("active");
 
     $(".list-chat").removeClass("flex-active");
 
     $(".list-chat[data-conversazione = " + chat +"]").addClass("flex-active");
+
+
+    $(".contact").find(".user-name-active").text($(this).find(".user-name").text());
+
+    var actImg = $(this).find("img").attr("src");
+    $(".contact").find("img").attr("src", actImg);
   })
 
 // S E A R C H  B Y  I N P U T//

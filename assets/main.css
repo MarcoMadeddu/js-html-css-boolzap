@@ -40,6 +40,8 @@ body{
 .left-chat{
   height: 90vh;
   flex-basis: 35%;
+  flex-grow: 1;
+  overflow-y: scroll;
 }
 
 
@@ -73,7 +75,6 @@ body{
 /* M A I N  L E F T */
 .main-left{
   width: 100%;
-  flex-grow: 1;
 }
 
 /* N O T I F Y  S E C T I O N */
@@ -137,8 +138,10 @@ body{
 /* C H A T S  S E C T I O N */
 
 .chat-container{
-  height: 510px;
-  overflow-y: scroll;
+  /* display: flex;
+  flex-direction: column;
+  flex-grow: 1
+  overflow-y: scroll; */
 }
 
 .chats{
@@ -237,6 +240,11 @@ body{
 .list-chat{
   display: flex;
   flex-direction: column;
+  display: none;
+}
+
+.flex-active{
+  display: flex;
 }
 
 .list-chat li{

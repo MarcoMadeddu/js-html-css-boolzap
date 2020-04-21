@@ -43,8 +43,10 @@
           </div>
           <!--**  S E A R C H  S E C T I O N **-->
           <div class="search">
+            <label class="search-label" for="search-input">
             <i class="fas fa-search"></i>
-            <input class="contact-search"type="text" placeholder= "Cerca o inizia una nuova chat">
+          </label>
+            <input id="search-input" class="contact-search"type="text" placeholder= "Cerca o inizia una nuova chat">
           </div>
 
           <!--**  C H A T  S E C T I O N **-->
@@ -171,13 +173,46 @@
         <!-- ** M A I N  R I G H T **  -->
         <main class="main-right">
           <div class="main-chat">
-            <ul class="list-chat on">
+            <ul class="list-chat flex-active" data-conversazione="0">
               <li class="rec"> <span class="mex-text bg-white">Ei <span>18:53</span></span> </li>
               <li class="send"><span class="mex-text bg-green">Ciao <span>18:53</span></span> </li>
               <li class="rec"> <span class="mex-text bg-white">Come stai? <span>18:53</span></span> </li>
-              <li class="rec"> <span class="mex-text bg-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. <span>18:53</span></span> </li>
-              <li class="send"><span class="mex-text bg-green">tutto bene tu? <span>18:53</span></span> </li>
-              <li class="send"><span class="mex-text bg-green">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. <span>18:53</span></span> </li>
+            </ul>
+
+            <ul class="list-chat" data-conversazione="1">
+              <li class="rec"> <span class="mex-text bg-white">Ei <span>18:53</span></span> </li>
+              <li class="send"><span class="mex-text bg-green">Ciao <span>18:53</span></span> </li>
+              <li class="rec"> <span class="mex-text bg-white">Come stai? <span>18:53</span></span> </li>
+            </ul>
+
+            <ul class="list-chat" data-conversazione="2">
+              <li class="rec"> <span class="mex-text bg-white">Ei <span>18:53</span></span> </li>
+              <li class="send"><span class="mex-text bg-green">Ciao <span>18:53</span></span> </li>
+              <li class="rec"> <span class="mex-text bg-white">Come stai? <span>18:53</span></span> </li>
+            </ul>
+
+            <ul class="list-chat" data-conversazione="3">
+              <li class="rec"> <span class="mex-text bg-white">Ei <span>18:53</span></span> </li>
+              <li class="send"><span class="mex-text bg-green">Ciao <span>18:53</span></span> </li>
+              <li class="rec"> <span class="mex-text bg-white">Come stai? <span>18:53</span></span> </li>
+            </ul>
+
+            <ul class="list-chat" data-conversazione="4">
+              <li class="rec"> <span class="mex-text bg-white">Ei <span>18:53</span></span> </li>
+              <li class="send"><span class="mex-text bg-green">Ciao <span>18:53</span></span> </li>
+              <li class="rec"> <span class="mex-text bg-white">Come stai? <span>18:53</span></span> </li>
+            </ul>
+
+            <ul class="list-chat" data-conversazione="5">
+              <li class="rec"> <span class="mex-text bg-white">Ei <span>18:53</span></span> </li>
+              <li class="send"><span class="mex-text bg-green">Ciao <span>18:53</span></span> </li>
+              <li class="rec"> <span class="mex-text bg-white">Come stai? <span>18:53</span></span> </li>
+            </ul>
+
+            <ul class="list-chat" data-conversazione="6">
+              <li class="rec"> <span class="mex-text bg-white">Ei <span>18:53</span></span> </li>
+              <li class="send"><span class="mex-text bg-green">Ciao <span>18:53</span></span> </li>
+              <li class="rec"> <span class="mex-text bg-white">Come stai? <span>18:53</span></span> </li>
             </ul>
           </div>
         </main>
@@ -206,12 +241,12 @@
 
     <!-- ** S E N T ** -->
     <div class="template">
-      <li class="send"><span class="mex-text bg-green"><span>18:53</span></span> </li>
+      <li class="send"><span class="mex-text bg-green"><span class="time"></span></span> </li>
     </div>
 
     <!-- ** R E C E V E I D ** -->
     <div class="template">
-      <li class="rec"><span class="mex-text bg-white"><span>18:53</span></span> </li>
+      <li class="rec"><span class="mex-text bg-white"><span class="time"></span></span> </li>
     </div>
 
 

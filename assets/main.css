@@ -38,10 +38,10 @@ body{
 
 /* L E F T  C H A T */
 .left-chat{
+  display: flex;
+  flex-direction: column;
   height: 90vh;
   flex-basis: 35%;
-  flex-grow: 1;
-  overflow-y: scroll;
 }
 
 
@@ -138,10 +138,8 @@ body{
 /* C H A T S  S E C T I O N */
 
 .chat-container{
-  /* display: flex;
-  flex-direction: column;
-  flex-grow: 1
-  overflow-y: scroll; */
+  flex-grow: 1;
+  overflow-y: auto;
 }
 
 .chats{
@@ -228,13 +226,13 @@ body{
   flex-grow: 1;
   width: 100%;
   background-image: url("../img/mine.jpg");
-  overflow-y: scroll;
+  overflow-y: auto;
 }
 
 .main-chat{
   width: 80%;
   height: 100%;
-  margin-top: 40px;
+  padding-top: 40px;
 }
 
 .list-chat{

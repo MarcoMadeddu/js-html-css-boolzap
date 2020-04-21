@@ -11,8 +11,16 @@ $(document).ready(function (){
   var searchIn = $(".contact-search");
   var chatContainer=$(".chats");
 
+  // C H A N G E  C H A T //
+  $(".chats").click(function(){
+    var chat = $(this).attr("data-conversazione");
 
-// S E A R CH  B Y  I N P U T//
+    $(".list-chat").removeClass("flex-active");
+
+    $(".list-chat[data-conversazione = " + chat +"]").addClass("flex-active");
+  })
+
+// S E A R C H  B Y  I N P U T//
   searchIn.keyup(function(a){
 
     chatContainer.hide();
@@ -35,16 +43,6 @@ $(document).ready(function (){
     }
   });
 
-  // C H A N G E  S E N D  I C O N //
-  newMessage.focusin(function(){
-    sendButton.removeClass("fas fa-microphone");
-    sendButton.addClass("fas fa-paper-plane");
-  });
-  newMessage.focusout(function(){
-    sendButton.removeClass("fas fa-paper-plane");
-    sendButton.addClass("fas fa-microphone");
-  });
-
   // S E N D  B Y  K E Y  F U N C T I O N //
 
   newMessage.keyup(function(e){
@@ -56,6 +54,16 @@ $(document).ready(function (){
         replyMessage();
       }
     }
+  });
+
+  // C H A N G E  S E N D  I C O N //
+  newMessage.focusin(function(){
+    sendButton.removeClass("fas fa-microphone");
+    sendButton.addClass("fas fa-paper-plane");
+  });
+  newMessage.focusout(function(){
+    sendButton.removeClass("fas fa-paper-plane");
+    sendButton.addClass("fas fa-microphone");
   });
 
 
@@ -79,7 +87,7 @@ $(document).ready(function (){
       var elementNew = $(".template .send ").clone();
       elementNew.children(".mex-text.bg-green").prepend(text);
       elementNew.find(".time").text(createTime());
-      list.append(elementNew);
+      $(".list-chat.flex-active").append(elementNew);
       chatHeight.scrollTop(chatHeight.prop('scrollHeight'));
 
     newMessage.val("");
@@ -91,7 +99,7 @@ $(document).ready(function (){
       var elementNew = $(".template .rec ").clone();
       elementNew.children(".mex-text.bg-white").prepend(text);
       elementNew.find(".time").text(createTime());
-      list.append(elementNew);
+      $(".list-chat.flex-active").append(elementNew);
       chatHeight.scrollTop(chatHeight.prop('scrollHeight'));
 
   };

@@ -4,7 +4,7 @@ $(document).ready(function (){
   // S E N D - R E P L Y - B U T T O N //
   var list = $(".list-chat");
   var newMessage = $(".new-message");
-  var chatContainer = $(".main-right");
+  var chatHeight = $(".main-right");
   var sendButton =$(".footer-right .send-section .mic i");
 
   // S E A R C H //
@@ -81,7 +81,7 @@ $(document).ready(function (){
       var elementNew = $(".template .send ").clone();
       elementNew.children(".mex-text.bg-green").prepend(text);
       list.append(elementNew);
-      chatContainer.scrollTop(chatContainer.prop('scrollHeight'));
+      chatHeight.scrollTop(chatHeight.prop('scrollHeight'));
 
     newMessage.val("");
   };
@@ -92,6 +92,6 @@ $(document).ready(function (){
       var elementNew = $(".template .rec ").clone();
       elementNew.children(".mex-text.bg-white").prepend(text);
       list.append(elementNew);
-      chatContainer.scrollTop(chatContainer.prop('scrollHeight'));
+      chatHeight.scrollTop(chatHeight.prop('scrollHeight'));
   };
 });
